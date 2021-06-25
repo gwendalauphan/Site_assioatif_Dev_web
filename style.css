@@ -1,0 +1,202 @@
+html {
+    background-color: #d6d6d6;
+    position: relative;
+}
+
+#nav {
+    float: left;
+    width: 87%;
+    line-height: 1;
+    background: white;
+    border: solid #eda;
+    border-width: 0.19em;
+    font-size: 170%;
+    list-style: none;
+    margin-left: 2.5%;
+    margin-right: 50%;
+}
+
+* {
+    padding: 0;
+}
+
+#nav ul {
+    width: 75%;
+    line-height: 1;
+    background: white;
+    border: solid #a7945a;
+    font-size: 100%;
+    margin-left: 0!important;
+}
+
+#nav a {
+    width: 10em;
+    text-decoration: none;
+    padding: 0.25em 2em;
+    color: #7C6240;
+}
+
+#nav li {
+    padding: 2%;
+}
+
+div.menu {
+    padding-left: 5%;
+}
+
+h1 {
+    font-size: 300%;
+    text-shadow: #ffae00 2.5px 2.5px 0, #ff00c0 5px 5px 0, #aa0306 7.5px 7.5px 0, #7c0003 10px 10px 10px;
+    color: #ffe69a;
+}
+
+div.suite {
+    background-image: url(images_accueil/image_accueil/background_accueil.png);
+}
+
+tr.a :hover,
+#nav li:hover {
+    background: #eda;
+}
+
+
+/*La fonction hover qui sert à foncer la case au moment où la sourie passe dessus*/
+
+#nav li,
+#nav ul {
+    float: left;
+}
+
+.membres img {
+    border-radius: 50%;
+}
+
+div.membres {
+    display: flex;
+    margin: 5%;
+    flex-direction: row;
+}
+
+div.mate {
+    padding: 7% 2%;
+    text-align: center;
+    width: 40%;
+}
+
+div.presentation h1 {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box
+}
+
+
+/* Slideshow container */
+
+.slider {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.photo {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.droite,
+.gauche {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.droite {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.gauche:hover,
+.droite:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #e6ff01;
+    font-size: 20px;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
