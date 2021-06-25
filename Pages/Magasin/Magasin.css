@@ -1,0 +1,213 @@
+body {
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr 5fr;
+    grid-template-rows: 2fr 4fr 4fr 4fr;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#titre {
+    color: white;
+    background-image: url(img2/BDS_garde.jpg);
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1 /scale 4;
+}
+
+h4 {
+    color: orange;
+}
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 750; 
+    font-size: 350%;
+}
+
+button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+button:active {
+    color: #000
+}
+
+button:active:after {
+    background: transparent;
+}
+
+button:hover:before {
+    opacity: 1;
+}
+
+button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+#KIT10 {
+    text-align: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#KIT11 {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#KIT12 {
+    text-align: center;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#KIT13 {
+    text-align: center;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#KIT14 {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#KIT15 {
+    text-align: center;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#KIT16 {
+    text-align: center;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#KIT17 {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+div.article{
+height:100%;
+}
+
+#destination {
+    text-align: center;
+    grid-row: 2 /scale 4;
+    grid-column: 4;
+    border: 3px solid #000000;
+}
+
+#form {
+    margin-top: 7%;
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#factu {
+    text-align: center;
+    position: absolute;
+    left: 70%;
+    top: 60%;
+}
+
+#email {
+    text-align: center;
+    position: absolute;
+    left: 60%;
+    top: 81%;
+}
+
+tr.a :hover, #nav li:hover{background: #eda;} /*La fonction hover qui sert à foncer la case au moment où la sourie passe dessus*/
+#nav li, #nav ul {float:left;}
+
+#nav {
+float: left;
+width: 87%;
+line-height: 1;
+background: white;
+border: solid #eda;
+border-width: 0.19em;
+font-size: 170%;
+list-style: none;
+margin-left: 2.5%;
+margin-right: 50%;
+}
+
+* {
+    padding: 0;
+}
+
+#nav ul {
+width: 75%;
+line-height: 1;
+background: white;
+border: solid #a7945a;
+font-size: 100%;
+margin-left: 0!important;
+
+}
+
+
+#nav a{
+  width: 10em;
+  text-decoration: none;
+  padding: 0.25em 2em;
+  color: #7C6240;
+}
+
+#nav li {
+padding:2%;
+}
+
+div.menu{
+  padding-left:5%;
+  display: inline-block;
+  width:87%;
+}
