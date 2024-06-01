@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  php:
+    image: php:7.4-apache
+    container_name: php_site_associatif
+    ports:
+      - "8000:80"
+    volumes:
+      - ./index.php:/var/www/html/index.php
+      - ./Pages:/var/www/html/Pages
+      - ./images_accueil:/var/www/html/images_accueil
+      - ./style.css:/var/www/html/style.css
+      - ./accueil.js:/var/www/html/accueil.js
+      - ./Generic:/var/www/html/Generic
+      - ./BDD:/var/www/html/BDD

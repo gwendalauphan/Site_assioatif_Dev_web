@@ -10,15 +10,12 @@
 
 </head>
 <body>
-
     <?php 
-        session_start();
-        //initialisation des variables si elles ne sont pas définies
-        if (!isset($_SESSION["USER"])){
+        if (!isset($_SESSION["USER"])) {
             $_SESSION["USER"] = "-1";
             $_SESSION["UserEvent"] = "";
         }
-        include "Generic/header.php"; 
+        include "Generic/header.php";
     ?>
     <div class="suite">
         <br>

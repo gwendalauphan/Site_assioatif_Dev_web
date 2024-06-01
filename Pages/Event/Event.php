@@ -19,7 +19,6 @@
     Pour vous y inscrire c'est juste en dessous: </span></div>
     </div> 
     <?php
-        session_start();
         include "../../Generic/header.php";
     ?>
     <div class = "container">

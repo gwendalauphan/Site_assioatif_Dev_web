@@ -9,7 +9,7 @@ function connectUser() {
                 if (data == "2") {
                     //si il s'agit d'un admin, on le redirige vers la page d'administration
                     window.location.replace("../Admin/Admin.php");
-                } else window.location.replace("../../index.php"); //sinon vers la page d'accueil
+                } else window.location.replace("modifier.php"); //sinon vers la page d'accueil
             } else alert(data);
         }
     })
