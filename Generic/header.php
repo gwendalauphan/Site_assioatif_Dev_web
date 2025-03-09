@@ -20,9 +20,9 @@
                 else{
                     echo '<li><a href="/Pages/Utilisateur/modifier.php">Profil</a></li>';
                 }
-                echo "<li><a href='' onclick='disconnect()'>Se deconnecter</a></li>"; //toujoours si la personne est connectée, on lui propose le bouton pour se deconnecter
+                echo "<li><a href='#' onclick='disconnect(); return false;'>Se déconnecter</a></li>";
             }
-        ?> 
+        ?>
         </ul>
     </li>
 </div>

@@ -1,12 +1,12 @@
 function disconnect() {
-    //fonction pour faire une requète AJAX pour se deconnecter
+    console.log("disconnect() called"); // Vérifier si la fonction est appelée
     $.ajax({
         type: "post",
         url: "/Generic/disconnect.php",
         data: { "action": "disconnect" },
         success: function(data) {
             alert(data);
-            location.reload(); //raffaichissement de la page
+            location.reload(); //rafraîchissement de la page
         }
     })
 }

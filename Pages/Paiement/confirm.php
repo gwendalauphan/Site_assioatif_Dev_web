@@ -16,7 +16,7 @@
 			$list = explode("µ", $produits[intval($item)]);
 			$list[1] = intval($list[1])-1;
 			if ($list[1] < 0) exit("Vous ne pouvez pas commander plus que le stock disponible");
-			$list[1] = strval($list[1];)
+			$list[1] = strval($list[1]);
 			$produits[intval($item)] = implode("µ", $list);
 		}
 

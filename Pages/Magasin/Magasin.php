@@ -7,13 +7,15 @@
     <script type="text/javascript" src="JSMagasin.js"></script>
   </head>
 
-  <body> 
+  <body>
 
     <div id="titre">
 	    <h1>Boutique</h1>
       <h4>Découvre la collection complète CY-Tech , choisis la tenue qu'il te faut et affiche fièrement ton soutien à ton école.</h4>
       <?php
-        session_start();
+        if (session_status() === PHP_SESSION_NONE) {
+              session_start();
+        }
         include "../../Generic/header.php";
       ?>
     </div>
@@ -37,7 +39,7 @@
         #si l'article est en rupture de stock, on affiche un bouton pour l'anoncer
         echo "<button class='article' style='background:#555' disabled>Rupture de stock</button>";
       }
-          echo "</div>"; 
+          echo "</div>";
       }
     ?>
 

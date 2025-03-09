@@ -1,10 +1,14 @@
 <?php
-    //fichier utilisé pour la deconnexion
-    if (!isset($_POST["action"])) {
-        exit("<h1>Vous n'avez pas les droits nécessaires pour acceder à cette page!</h1><br><a href='../../index.php'>Retourner à l'acueil</a>");
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
     }
-    session_start();
-    $_SESSION["USER"] = "-1"; //attribution des lvaleur par défaut aux variables de session
+
+    if (!isset($_POST["action"])) {
+        exit("<h1>Vous n'avez pas les droits nécessaires pour accéder à cette page!</h1><br><a href='../../index.php'>Retourner à l'accueil</a>");
+    }
+
+    $_SESSION["USER"] = -1; // Utilisation de l'entier au lieu de "-1" qui est une chaîne
     $_SESSION["UserEvent"] = "";
-    echo "Vous avez été deconnecté"; //message de deconnexion
+
+    echo "Vous avez été déconnecté"; // Message de déconnexion
 ?>

@@ -1,5 +1,9 @@
 <?php
-    session_start();
+    
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+    
     //fonction utilisée pour enregistrer une base de donnée
     function closeDB($list, $dblist, $id, $dbname){
         $dblist[$id] = implode("µ", $list); //on transforme la liste des atributs d'un element en un string séparé par un µ
